@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VMOU M.Sc. Mathematics Study Portal</title>
+<style>
+:root{--navy:#12233f;--blue:#2357a6;--gold:#f0b84b;--paper:#f4f7fb;--ink:#1d2939;--muted:#667085}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,"Noto Sans Devanagari",sans-serif;background:var(--paper);color:var(--ink)}
+header{background:linear-gradient(125deg,#10213d,#2357a6);color:#fff;padding:28px 18px 34px}
+.wrap{max-width:1050px;margin:auto}.topline{font-size:13px;letter-spacing:1.4px;text-transform:uppercase;color:#dce7ff}
+h1{font-size:clamp(25px,5vw,40px);margin:10px 0 8px}.subtitle{margin:0;color:#e2eaff;line-height:1.6}
+main{max-width:1050px;margin:-18px auto 40px;padding:0 16px}.toolbar{background:white;border-radius:16px;padding:16px;box-shadow:0 8px 24px #13294b12;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+input{flex:1;min-width:200px;padding:13px 14px;border:1px solid #d0d5dd;border-radius:10px;font-size:15px;outline-color:var(--blue)}
+.count{font-size:13px;color:var(--muted);white-space:nowrap}
+.group{margin-top:22px}.group-head{display:flex;align-items:center;gap:12px;margin:0 0 12px}.group-head h2{font-size:21px;margin:0}.pill{background:#e5edff;color:#214b91;border-radius:999px;padding:6px 10px;font-size:12px;font-weight:bold}
+.semester{background:#fff;border-radius:15px;padding:17px;margin:12px 0;box-shadow:0 4px 18px #13294b0b;border:1px solid #e7ecf3}
+.sem-title{font-size:16px;font-weight:bold;margin:0 0 13px;display:flex;align-items:center;gap:9px}.sem-title:before{content:"";height:19px;width:4px;border-radius:4px;background:var(--gold)}
+.subjects{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px}
+.subject{border:1px solid #e4e9f1;border-radius:11px;padding:13px;display:flex;gap:12px;align-items:flex-start;background:#fbfcfe;transition:.15s}
+.subject:hover{border-color:#9bb8ee;background:#f5f8ff}.code{font-size:12px;font-weight:800;color:var(--blue);white-space:nowrap;background:#eaf0ff;padding:6px 8px;border-radius:7px}
+.name{font-size:14px;font-weight:600;line-height:1.45}.small{font-size:12px;color:var(--muted);margin-top:5px}
+footer{text-align:center;color:var(--muted);font-size:12px;padding:10px 16px 30px;line-height:1.7}
+.empty{display:none;padding:24px;text-align:center;color:var(--muted)}
+@media(max-width:520px){header{padding-top:22px}.toolbar{padding:12px}.semester{padding:13px}.subjects{grid-template-columns:1fr}.count{width:100%}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <div class="topline">Study resources • Course directory</div>
+  <h1>VMOU M.Sc. Mathematics</h1>
+  <p class="subtitle">Vardhman Mahaveer Open University (VMOU)<br>MAT course codes — Previous &amp; Final</p>
+</div></header>
+<main>
+  <div class="toolbar">
+    <input id="search" type="search" placeholder="Subject code ya naam search karein…" aria-label="Search subjects">
+    <div class="count" id="count">12 subjects • 4 semesters</div>
+  </div>
+  <section class="group" data-group="previous">
+    <div class="group-head"><h2>MSCMT (Previous)</h2><span class="pill">Semester 1–2</span></div>
+    <div class="semester" data-sem="1">
+      <h3 class="sem-title">Semester 1</h3>
+      <div class="subjects">
+        <article class="subject" data-search="mat 101 advanced algebra"><span class="code">MAT-101</span><div><div class="name">Advanced Algebra</div><div class="small">MSCMT (Previous) · Semester 1</div></div></article>
+        <article class="subject" data-search="mat 102 real analysis topology"><span class="code">MAT-102</span><div><div class="name">Real Analysis and Topology</div><div class="small">MSCMT (Previous) · Semester 1</div></div></article>
+        <article class="subject" data-search="mat 103 integral transform integral equation"><span class="code">MAT-103</span><div><div class="name">Integral Transform and Integral Equation</div><div class="small">MSCMT (Previous) · Semester 1</div></div></article>
+      </div>
+    </div>
+    <div class="semester" data-sem="2">
+      <h3 class="sem-title">Semester 2</h3>
+      <div class="subjects">
+        <article class="subject" data-search="mat 201 differential equation calculus of variation special function"><span class="code">MAT-201</span><div><div class="name">Differential Equation, Calculus of Variation and Special Function</div><div class="small">MSCMT (Previous) · Semester 2</div></div></article>
+        <article class="subject" data-search="mat 202 mechanics"><span class="code">MAT-202</span><div><div class="name">Mechanics</div><div class="small">MSCMT (Previous) · Semester 2</div></div></article>
+        <article class="subject" data-search="mat 203 viscous fluid dynamics"><span class="code">MAT-203</span><div><div class="name">Viscous Fluid Dynamics</div><div class="small">MSCMT (Previous) · Semester 2</div></div></article>
+      </div>
+    </div>
+  </section>
+  <section class="group" data-group="final">
+    <div class="group-head"><h2>MSCMT (Final)</h2><span class="pill">Semester 3–4</span></div>
+    <div class="semester" data-sem="3">
+      <h3 class="sem-title">Semester 3</h3>
+      <div class="subjects">
+        <article class="subject" data-search="mat 301 mathematical programming"><span class="code">MAT-301</span><div><div class="name">Mathematical Programming</div><div class="small">MSCMT (Final) · Semester 3</div></div></article>
+        <article class="subject" data-search="mat 302 differential geometry tensor"><span class="code">MAT-302</span><div><div class="name">Differential Geometry and Tensor</div><div class="small">MSCMT (Final) · Semester 3</div></div></article>
+        <article class="subject" data-search="mat 303 research methods"><span class="code">MAT-303</span><div><div class="name">Research Methods</div><div class="small">MSCMT (Final) · Semester 3</div></div></article>
+      </div>
+    </div>
+    <div class="semester" data-sem="4">
+      <h3 class="sem-title">Semester 4</h3>
+      <div class="subjects">
+        <article class="subject" data-search="mat 401 analysis advanced calculus"><span class="code">MAT-401</span><div><div class="name">Analysis and Advanced Calculus</div><div class="small">MSCMT (Final) · Semester 4</div></div></article>
+        <article class="subject" data-search="mat 402 numerical analysis"><span class="code">MAT-402</span><div><div class="name">Numerical Analysis</div><div class="small">MSCMT (Final) · Semester 4</div></div></article>
+        <article class="subject" data-search="mat 403 research reflections reviews"><span class="code">MAT-403</span><div><div class="name">Research Reflections and Reviews</div><div class="small">MSCMT (Final) · Semester 4</div></div></article>
+      </div>
+    </div>
+  </section>
+  <div class="empty" id="empty">Koi subject nahi mila. Code ya naam dobara check karein.</div>
+</main>
+<footer>Student-made study portal · VMOU course directory<br>Yeh unofficial study website template hai; university ki official website nahi.</footer>
+<script>
+const search = document.getElementById('search');
+const cards = [...document.querySelectorAll('.subject')];
+const semesters = [...document.querySelectorAll('.semester')];
+const groups = [...document.querySelectorAll('.group')];
+const count = document.getElementById('count');
+const empty = document.getElementById('empty');
+search.addEventListener('input', () => {
+  const q = search.value.toLowerCase().trim();
+  let visible = 0;
+  cards.forEach(card => {
+    const match = !q || (card.dataset.search + ' ' + card.innerText).toLowerCase().includes(q);
+    card.style.display = match ? 'flex' : 'none';
+    if (match) visible++;
+  });
+  semesters.forEach(s => s.style.display = [...s.querySelectorAll('.subject')].some(c => c.style.display !== 'none') ? '' : 'none');
+  groups.forEach(g => g.style.display = [...g.querySelectorAll('.semester')].some(s => s.style.display !== 'none') ? '' : 'none');
+  count.textContent = `${visible} subjects shown • 4 semesters`;
+  empty.style.display = visible ? 'none' : 'block';
+});
+</script>
+</body>
+</html>
